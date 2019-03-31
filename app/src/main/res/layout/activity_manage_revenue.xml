@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel.ManageRevenueActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="4dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="3"
+                android:id="@+id/titleLinear"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Product Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Total Bids"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Selling Price"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/partition"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/titleLinear"
+                android:background="#dddd"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:padding="3dp"
+                android:id="@+id/recyclerRevenue"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/partition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/partition2"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/recyclerRevenue"
+                android:background="#dddd"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/partition2"
+                android:weightSum="3"
+                android:id="@+id/titleamount"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:text="Total Amount"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/totalAmount"
+                    android:layout_weight="1"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@id/titleamount"
+                android:weightSum="3"
+                android:id="@+id/titleamount2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:text="Your Revenue"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/totalRevenue"
+                    android:layout_weight="1"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

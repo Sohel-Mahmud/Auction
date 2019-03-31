@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="4dp"
+    android:id="@+id/cardViewProfileList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/user_image"
+            android:src="@drawable/user"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingEnd="5dp"
+                android:id="@+id/userName"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="User Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/userName"
+                android:id="@+id/userEmailPhone"
+                android:layout_marginTop="5dp"
+                android:text="email"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Auction</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="login"><u>Log In</u></string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="title_activity_main_buy_sell">Auction Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Auction</string>
+    <string name="nav_header_subtitle">Developed with </string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="details">Google was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University in California. Together they own about 14 percent of its shares and control 56 percent of the stockholder voting power through supervoting stock. They incorporated Google as a privately held company on September 4, 1998. An initial public offering (IPO) took place on August 19, 2004, and Google moved to its headquarters in Mountain View, California, nicknamed the Googleplex. In August 2015, Google announced plans to reorganize its various interests as a conglomerate called Alphabet Inc. Google is Alphabets leading subsidiary and will continue to be the umbrella </string>
+    <string name="title_activity_admin_panel">Admin Panel</string>
+    <string name="action_settings">Logout</string>
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#dddd"
+    tools:context=".AuctionDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginBottom="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/user_image"
+                        android:src="@drawable/user"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:paddingEnd="5dp"
+                            android:id="@+id/user_name"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:text="User Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_below="@+id/user_name"
+                            android:id="@+id/auction_post_time"
+                            android:layout_marginTop="5dp"
+                            android:text="min ago"
+                            android:textSize="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/item_title"
+                        android:layout_width="wrap_content"
+                        android:text="Item Name"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/item_tiem_remain"
+                        android:text="Remainig days hous"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/num_of_bids"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:background="@android:color/holo_red_light"
+                        android:text=" bids"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageOffer"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        android:layout_height="200dp"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/item_description"
+                        android:layout_width="match_parent"
+                        android:text="@string/details"
+                        android:layout_gravity="start"
+                        android:textSize="12sp"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:id="@+id/enterReferCodelayout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp">
+                        <EditText
+                            android:maxLength="10"
+                            android:textSize="12sp"
+                            android:inputType="number"
+                            android:textColor="#152934"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:textAlignment="center"
+                            android:id="@+id/edtBidPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/btnApplyBid"
+                            />
+                        <Button
+                            android:textSize="15sp"
+                            android:textColor="#fff"
+                            android:background="@color/colorAccent"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/btnApplyBid"
+                            android:textAlignment="center"
+                            android:layout_width="83dp"
+                            android:layout_height="match_parent"
+                            android:text="BID"
+                            android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/cardDetailsLayout"
+            android:id="@+id/cardCurrentbid"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/user_latest_image"
+                    android:src="@drawable/user"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                    <TextView
+                        android:paddingEnd="5dp"
+                        android:id="@+id/user_latest_name"
+                        android:layout_toRightOf="@id/user_latest_image"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:text="User Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_toRightOf="@+id/user_latest_name"
+                        android:id="@+id/user_offered_price"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:layout_marginRight="6dp"
+                        android:text="Price Offered:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:id="@+id/accept_reject_layout"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/user_latest_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--<Button-->
+                            <!--android:id="@+id/btnBidReject"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="Accept"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:textColor="#ffff"-->
+                            <!--android:background="@color/colorAccent"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent" />-->
+                        <Button
+                            android:id="@+id/btnBidAccept"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffff"
+                            android:background="@android:color/holo_red_light"
+                            android:text="Accept"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>
